@@ -1,0 +1,62 @@
+@font-face {
+  font-family: "spfpro";
+  src: url(../fonts/SFPRODISPLAYREGULAR.OTF);
+}
+img {
+  height: 3%;
+  width: 3%;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+li {
+  list-style: none;
+}
+
+body {
+  background: #ffffff;
+  font-family: spfpro, sans-serif;
+  text-transform: capitalize;
+  color: #0d0d0d;
+}
+body:before {
+  content: "";
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  background: rgba(240, 174, 51, 0.2666666667);
+  animation: animBefore 1.5s ease forwards;
+  animation-delay: 0.15s;
+}
+@keyframes animBefore {
+  to {
+    opacity: 0;
+  }
+}
+
+nav {
+  height: 96px;
+  overflow: hidden;
+  background-color: #f1f1f1;
+  display: flex;
+  justify-content: space-between;
+  position: fixed;
+  width: 100%;
+}
+nav .logo {
+  display: flex;
+}
+nav .logo img {
+  height: 40px;
+  width: 40px;
+}/*# sourceMappingURL=index.css.map */

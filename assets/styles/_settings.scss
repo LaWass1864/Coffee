@@ -1,0 +1,73 @@
+// Polices
+
+@font-face {
+  font-family: "spfpro";
+  src: url(../fonts/SFPRODISPLAYREGULAR.OTF);
+}
+
+$font1: spfpro, sans-serif;
+
+//   Mixin
+
+@mixin childCenter {
+  display: flex;
+  justify-content: space-between;
+}
+
+@mixin alignChildren($space) {
+  display: flex;
+  align-items: center;
+  justify-content: $space;
+}
+
+@mixin borderRadius {
+  border-radius: 16px;
+}
+
+@mixin buttons($bgcolor) {
+  background: $bgcolor;
+  border-radius: 16px;
+}
+
+img {
+  height: 3%;
+  width: 3%;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+li {
+  list-style: none;
+}
+
+body {
+  background: #ffffff;
+  font-family: $font1;
+  text-transform: capitalize;
+  color: #0d0d0d;
+  &:before {
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background: #f0ae3344;
+    animation: animBefore 1.5s ease forwards;
+    animation-delay: 0.15s;
+
+    @keyframes animBefore {
+      to {
+        opacity: 0;
+      }
+    }
+  }
+}

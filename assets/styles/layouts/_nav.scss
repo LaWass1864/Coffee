@@ -1,0 +1,20 @@
+nav {
+  height: 96px;
+  overflow: hidden;
+  background-color: #f1f1f1;
+  display: flex;
+  justify-content: space-between;
+  position: fixed;
+  width: 100%;
+  
+  .logo{
+    
+    display: flex;
+    img{
+        height: 40px;
+        width: 40px;
+    }
+  }
+  
+}
+
