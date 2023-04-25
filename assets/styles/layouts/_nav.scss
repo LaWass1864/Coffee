@@ -1,20 +1,87 @@
 nav {
   height: 96px;
-  overflow: hidden;
-  background-color: #f1f1f1;
+
   display: flex;
   justify-content: space-between;
-  position: fixed;
   width: 100%;
-  
-  .logo{
-    
-    display: flex;
-    img{
-        height: 40px;
-        width: 40px;
+  padding: 20px;
+  position: sticky;
+  top: 0;
+  animation-name: gradient;
+
+  background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+  background-size: 400% 400%;
+  animation: gradient 15s ease infinite;
+
+  @keyframes gradient {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
     }
   }
-  
-}
+  .logo {
+    display: flex;
 
+    img {
+      height: 40px;
+      width: 40px;
+      border-radius: 15px;
+    }
+
+    li {
+      font-weight: bolder;
+      letter-spacing: 0.4px;
+      padding-right: 10px;
+      font-size: 1.5rem;
+      display: flex;
+      align-items: center;
+    }
+  }
+
+  .right-nav {
+    display: flex;
+    align-items: center;
+
+    li {
+      display: flex;
+      padding: 20px;
+      font-size: 1.1rem;
+      font-weight: 700;
+      cursor: pointer;
+    }
+
+    button {
+      border-radius: 4px;
+      color: black;
+      font-weight: 600;
+      text-align: center;
+      border: 1px solid gray;
+      transition: all 0.5s;
+      cursor: pointer;
+      border-radius: 15px;
+      background-color: rgba(128, 128, 128, 0.067);
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 10px;
+      height: 62px;
+      width: 225px;
+      font-size: 1.1rem;
+      img {
+        width: auto;
+        height: auto;
+        padding-right: 10px;
+      }
+
+      span {
+        padding-top: 5px;
+      }
+    }
+  }
+}

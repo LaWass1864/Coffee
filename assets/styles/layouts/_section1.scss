@@ -1,0 +1,41 @@
+.section1 {
+  background: url(/assets/img/peakpx.jpg) center/cover;
+  border-radius: 30px;
+  min-height: 530px;
+  aspect-ratio: 1.6951 / 1;
+  margin: 0 230px;
+  padding: 20px;
+}
+.menu {
+  display: flex;    
+  justify-content: space-between;
+
+  .apple {
+    width: 30px;
+    height: 20px;
+
+    img {
+      width: auto;
+      height: auto;
+      background: #00000052;
+      padding: 15px;
+      border-radius: 50%;
+    }
+  }
+
+  .right-menu{
+    background: #00000052;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border-radius: 30px;
+    height: 50px;
+    width: 220px;
+    color:white;
+
+    img{
+        width: 25px;
+        height: 25px;
+    }
+  }
+}
