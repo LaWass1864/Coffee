@@ -32,7 +32,6 @@ $font1: spfpro, sans-serif;
 img {
   height: 3%;
   width: 3%;
-  
 }
 
 * {
@@ -54,6 +53,8 @@ body {
   font-family: $font1;
   text-transform: capitalize;
   color: #0d0d0d;
+
+ 
   &:before {
     content: "";
     position: absolute;

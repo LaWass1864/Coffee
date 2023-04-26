@@ -1,17 +1,35 @@
 header {
   padding: 110px;
   min-height: 500px;
-  margin: 0 230px;
+  width: 70%;
+  margin: 0 auto;
+  @media only screen and (max-width: 768px)  {
+    
+    
+  }
+  @media only screen and (max-width: 320px)  {
+    
+   
+  }
+
   .text-header {
-    text-align: left;
     margin-bottom: 40px;
-   width: 70%;
 
     h1 {
-      font-size: 5vw;
+      font-size: 96px;
       text-transform: none;
       font-weight: bolder;
-      letter-spacing: 1px;
+      letter-spacing: normal;
+      text-align: left;
+      @media only screen and (max-width: 768px)  {
+        font-size: 72px;
+        padding: 0;
+      }
+      @media only screen and (max-width: 320px)  {
+        font-size: 16px;
+        text-align: start;
+       padding: 0;
+      }
     }
   }
   .buttons {

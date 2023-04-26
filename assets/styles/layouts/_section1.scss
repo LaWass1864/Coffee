@@ -1,41 +1,280 @@
 .section1 {
   background: url(/assets/img/peakpx.jpg) center/cover;
   border-radius: 30px;
-  min-height: 530px;
-  aspect-ratio: 1.6951 / 1;
-  margin: 0 230px;
+  min-height: 713px;
+  width: 80%;
+  margin: 0 auto;
   padding: 20px;
-}
-.menu {
-  display: flex;    
-  justify-content: space-between;
+  position: relative;
+  z-index: -1;
 
-  .apple {
-    width: 30px;
-    height: 20px;
+  .menu {
+    display: flex;
+    justify-content: space-between;
 
-    img {
-      width: auto;
-      height: auto;
+    .apple {
+      width: 30px;
+      height: 20px;
+
+      img {
+        width: auto;
+        height: auto;
+        background: #00000052;
+        padding: 15px;
+        border-radius: 50%;
+      }
+    }
+
+    .right-menu {
       background: #00000052;
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      border-radius: 30px;
+      height: 50px;
+      width: 230px;
+      color: white;
+
+      img {
+        width: 25px;
+        height: 25px;
+      }
+    }
+  }
+  .dark-menu {
+    background: #3333339a;
+    width: 290px;
+    height: 423px;
+    position: absolute;
+    top: 160px;
+    bottom: 132px;
+    left: 30px;
+    border-radius: 20px;
+    img {
+      height: 40px;
+      width: 40px;
+      border-radius: 15px;
+      background: #00000042;
+      display: flex;
+      justify-content: center;
+      padding: 7px;
+    }
+
+    .header-calendar {
+      background: #0000004d;
+      border-top-left-radius: 20px;
+      border-top-right-radius: 20px;
+      margin: 10px 10px 0 10px;
+      color: white;
+
+      .gray-1 {
+        display: grid;
+        grid-template-columns: 65% 35%;
+        align-items: center;
+        height: 60px;
+        padding: 15px;
+
+        .heart {
+          display: flex;
+          align-items: center;
+
+          img {
+            margin-right: 5px;
+          }
+        }
+
+        .time {
+          img {
+            background: none;
+            height: 30px;
+            width: 30px;
+          }
+          background: #03a6f1;
+          border-radius: 35px;
+          display: flex;
+          align-items: center;
+          height: 30px;
+          font-size: 14px;
+        }
+      }
+
+      .calendar {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+        padding: 15px;
+
+        .div1 {
+          display: grid;
+          grid-template-columns: 70% 30%;
+          align-items: center;
+          .days {
+            display: flex;
+            flex-direction: column;
+
+            .date2 {
+              color: gray;
+            }
+          }
+          div {
+            display: flex;
+            justify-content: flex-end;
+          }
+          .hours {
+            width: max-content;
+            background: #00000042;
+            padding: 10px;
+            border-radius: 35px;
+          }
+        }
+      }
+    }
+
+    .footer-menu {
+      background: #0000001e;
+      margin: 0 10px 10px;
+      border-bottom-left-radius: 30px;
+      border-bottom-right-radius: 30px;
       padding: 15px;
-      border-radius: 50%;
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+      color: #fff;
+      img {
+        border-radius: 10px;
+        height: 35px;
+        width: 35px;
+      }
+      .smarthome {
+        display: grid;
+        grid-template-columns: 20% 60% 20%;
+        align-items: center;
+        justify-content: space-between;
+      }
+
+      .relocation {
+        display: grid;
+        grid-template-columns: 20% 60% 20%;
+        align-items: center;
+        justify-content: space-between;
+      }
+    }
+
+    .footer-card {
+      img {
+        height: 30px;
+        width: 30px;
+      }
+      display: flex;
+      justify-content: space-between;
+      padding: 10px;
     }
   }
 
-  .right-menu{
-    background: #00000052;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    border-radius: 30px;
-    height: 50px;
-    width: 230px;
-    color:white;
+  .light-menu {
+    background: rgba(255, 255, 255, 0.8);
+    backdrop-filter: blur(50px);
+    top: 105px;
+    left: 968px;
+    position: absolute;
+    width: 280px;
+    height: 281px;
+    border-radius: 20px;
+    padding: 20px;
 
-    img{
-        width: 25px;
-        height: 25px;
+    img {
+      height: 25px;
+      width: 25px;
+    }
+
+    .first-menu {
+      display: flex;
+      flex-direction: column;
+      gap: 5px;
+
+      &::after {
+        content: "";
+        background-color: rgba(128, 128, 128, 0.303);
+        height: 1px;
+        margin-top: 10px;
+      }
+    }
+
+    .div1 {
+      display: grid;
+      grid-template-columns: 15% 45% 15% 20%;
+      align-items: center;
+    }
+
+    .div2 {
+      display: grid;
+      grid-template-columns: 15% 60% 25%;
+      align-items: center;
+    }
+
+    .div3 {
+      display: flex;
+      align-items: center;
+      img {
+        margin-right: 10px;
+      }
+    }
+
+    .second-menu {
+      display: flex;
+      flex-direction: column;
+      margin-top: 10px;
+      gap: 10px;
+
+      &::after {
+        content: "";
+        background-color: rgba(128, 128, 128, 0.303);
+        height: 1px;
+        margin-top: 5px;
+      }
+
+      li {
+        display: grid;
+        grid-template-columns: 15% 85%;
+        align-items: center;
+      }
+    }
+
+    .footer-menu {
+      display: grid;
+      grid-template-columns: 15% 85%;
+      align-items: center;
+      margin-top: 5px;
+
+      img {
+        height: 20px;
+        width: 20px;
+      }
+    }
+  }
+  .menu3 {
+    background: #0000001e;
+    border-radius: 15px;
+    width: 25%;
+    top: 85%;
+    left: 50%;
+    height: 75px;
+    transform: translate(-50%);
+    position: absolute;
+    padding: 10px;
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+    justify-content: center;
+    row-gap: 2px;
+    column-gap: 2px;
+
+    .div-vide {
+      border-radius: 15px;
+      background: rgba(80, 79, 79, 0.274);
+
+      &:last-child {
+        background: url(/assets/img/icons8-soda-48.png)center;
+      }
     }
   }
 }

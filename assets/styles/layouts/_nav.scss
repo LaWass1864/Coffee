@@ -1,9 +1,7 @@
 nav {
   height: 96px;
-
   display: flex;
-  justify-content: space-between;
-  width: 100%;
+  justify-content: space-between;  
   padding: 20px;
   position: sticky;
   top: 0;
@@ -53,6 +51,7 @@ nav {
       font-size: 1.1rem;
       font-weight: 700;
       cursor: pointer;
+     color:antiquewhite;
     }
 
     button {
@@ -60,18 +59,15 @@ nav {
       color: black;
       font-weight: 600;
       text-align: center;
-      border: 1px solid gray;
-      transition: all 0.5s;
+      border: 1px solid gray;      
       cursor: pointer;
       border-radius: 15px;
-      background-color: rgba(128, 128, 128, 0.067);
-      cursor: pointer;
+      background-color: rgba(128, 128, 128, 0.067);     
       display: flex;
       align-items: center;
       justify-content: center;
       padding: 10px;
-      height: 62px;
-      width: 225px;
+      height: 62px;      
       font-size: 1.1rem;
       img {
         width: auto;
