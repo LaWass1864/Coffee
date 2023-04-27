@@ -26,6 +26,8 @@ body {
   font-family: spfpro, sans-serif;
   text-transform: capitalize;
   color: #0d0d0d;
+  max-width: -moz-max-content;
+  max-width: max-content;
 }
 body:before {
   content: "";
