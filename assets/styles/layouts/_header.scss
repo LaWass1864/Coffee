@@ -3,17 +3,10 @@ header {
   min-height: 500px;
   width: 70%;
   margin: 0 auto;
-  @media only screen and (max-width: 768px)  {
-    
-    
-  }
-  @media only screen and (max-width: 320px)  {
-    
-   
-  }
-
+  
   .text-header {
     margin-bottom: 40px;
+    
 
     h1 {
       font-size: 96px;
@@ -21,15 +14,12 @@ header {
       font-weight: bolder;
       letter-spacing: normal;
       text-align: left;
-      @media only screen and (max-width: 768px)  {
-        font-size: 72px;
+      @media (max-width: 542px) {
+        font-size: 3rem;
+        text-align: center;
         padding: 0;
-      }
-      @media only screen and (max-width: 320px)  {
-        font-size: 16px;
-        text-align: start;
-       padding: 0;
-      }
+       }
+      
     }
   }
   .buttons {
@@ -56,6 +46,8 @@ header {
       font-size: 1.1rem;
       box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
       margin-right: 15px;
+
+   
       img {
         width: auto;
         height: auto;
@@ -69,6 +61,10 @@ header {
     img {
       height: 55px;
       width: 225px;
+
+      @media (max-width: 542px) {
+        display: none;;
+       }
     }
   }
 }

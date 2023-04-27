@@ -7,7 +7,7 @@
   padding: 20px;
   position: relative;
   z-index: -1;
-
+ 
   .menu {
     display: flex;
     justify-content: space-between;
@@ -181,6 +181,11 @@
     height: 281px;
     border-radius: 20px;
     padding: 20px;
+    @media (max-width: 1402px) {
+    display: none
+    ;
+
+   }
 
     img {
       height: 25px;
@@ -273,7 +278,7 @@
       background: rgba(80, 79, 79, 0.274);
 
       &:last-child {
-        background: url(/assets/img/icons8-soda-48.png)center;
+        background: url(/assets/img/icons8-soda-48.png)center/cover;
       }
     }
   }
