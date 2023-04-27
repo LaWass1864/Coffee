@@ -26,7 +26,6 @@ body {
   font-family: spfpro, sans-serif;
   text-transform: capitalize;
   color: #0d0d0d;
-  text-align: center;
 }
 body:before {
   content: "";
@@ -194,7 +193,7 @@ header .buttons img {
 }
 
 .section1 {
-  background: url(/assets/img/peakpx.jpg) center/cover;
+  background: url(../assets/img/peakpx.jpg) center/cover;
   border-radius: 30px;
   min-height: 713px;
   width: 80%;
