@@ -193,7 +193,7 @@ header .buttons img {
 }
 
 .section1 {
-  background: url(../assets/img/peakpx.jpg) center/cover;
+  background: url(/assets/img/peakpx.jpg) center/cover;
   border-radius: 30px;
   min-height: 713px;
   width: 80%;
