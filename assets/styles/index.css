@@ -143,16 +143,19 @@ header .text-header h1 {
   letter-spacing: normal;
   text-align: left;
 }
-@media (max-width: 542px) {
+@media (max-width: 578px) {
   header .text-header h1 {
-    font-size: 3rem;
-    text-align: center;
-    padding: 0;
+    font-size: 2rem;
   }
 }
 header .buttons {
   display: flex;
-  align-items: center;
+}
+@media (max-width: 578px) {
+  header .buttons {
+    display: flex;
+    flex-direction: column;
+  }
 }
 header .buttons button {
   border-radius: 4px;
@@ -181,17 +184,12 @@ header .buttons button img {
   height: auto;
   padding-right: 10px;
 }
-header .buttons button span {
+header .buttons span {
   padding-top: 5px;
 }
 header .buttons img {
-  height: 55px;
+  height: 70px;
   width: 225px;
-}
-@media (max-width: 542px) {
-  header .buttons img {
-    display: none;
-  }
 }
 
 .section1 {
@@ -501,6 +499,7 @@ header .buttons img {
   position: absolute;
   top: 25px;
   width: 180px;
+  z-index: -1;
 }
 
 footer {
